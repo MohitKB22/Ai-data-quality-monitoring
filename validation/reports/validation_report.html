@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data Validation Report - synthetic_data.csv</title>
+<style>
+  :root { --pass:#1e8e5a; --fail:#c53030; --bg:#f6f7fb; --card:#ffffff; --ink:#1a1d29; --muted:#697086; --accent:#3b5bfd; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--ink); }
+  header { background: linear-gradient(135deg, #1a1d29, #2f3550); color:#fff; padding: 32px 40px; }
+  header h1 { margin:0 0 6px 0; font-size: 24px; }
+  header p { margin:0; color:#c7cbe0; font-size: 14px; }
+  .container { max-width: 1000px; margin: -28px auto 40px auto; padding: 0 24px; }
+  .summary-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:16px; margin-bottom: 24px; }
+  .stat-card { background:var(--card); border-radius:12px; padding:18px 20px; box-shadow: 0 2px 10px rgba(20,20,50,0.08); }
+  .stat-card .value { font-size: 26px; font-weight:700; }
+  .stat-card .label { font-size: 12px; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; margin-top:4px;}
+  .stat-card.ok .value { color: var(--pass); }
+  .stat-card.warn .value { color: var(--fail); }
+  table { width:100%; border-collapse: collapse; background:var(--card); border-radius:12px; overflow:hidden; box-shadow: 0 2px 10px rgba(20,20,50,0.08);}
+  th, td { text-align:left; padding: 12px 16px; border-bottom:1px solid #eef0f6; font-size: 13.5px; }
+  th { background:#f0f1f8; color:var(--muted); text-transform:uppercase; font-size:11px; letter-spacing:.04em; }
+  tr:last-child td { border-bottom:none; }
+  .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; }
+  .badge.pass { background:#e5f7ee; color:var(--pass); }
+  .badge.fail { background:#fdeaea; color:var(--fail); }
+  .col-name { font-family: 'SFMono-Regular', Consolas, monospace; color:var(--accent); font-weight:600; }
+  footer { text-align:center; color:var(--muted); font-size:12px; padding: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>&#128269; Data Validation Report</h1>
+  <p>Dataset: <strong>synthetic_data.csv</strong> &nbsp;|&nbsp; Generated 2026-07-04T07:06:29.345421+00:00 &nbsp;|&nbsp; 103,000 rows evaluated</p>
+</header>
+<div class="container">
+  <div class="summary-grid">
+    <div class="stat-card warn"><div class="value">15/17</div><div class="label">Expectations Passed</div></div>
+    <div class="stat-card"><div class="value">88.2%</div><div class="label">Success Rate</div></div>
+    <div class="stat-card ok"><div class="value">8.85%</div><div class="label">Rows with Missing Fields</div></div>
+    <div class="stat-card ok"><div class="value">2.91%</div><div class="label">Duplicate Rows</div></div>
+  </div>
+  <table>
+    <thead><tr><th>Status</th><th>Expectation</th><th>Column</th><th>Description</th><th>Observed</th><th>Threshold</th></tr></thead>
+    <tbody>
+      <tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_not_be_null</td>
+  <td class="col-name">Age</td>
+  <td>At least 95% of 'Age' values should be non-null</td>
+  <td>0.9803</td>
+  <td>0.95</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_not_be_null</td>
+  <td class="col-name">Salary</td>
+  <td>At least 95% of 'Salary' values should be non-null</td>
+  <td>0.9798</td>
+  <td>0.95</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_not_be_null</td>
+  <td class="col-name">PurchaseAmount</td>
+  <td>At least 97% of 'PurchaseAmount' values should be non-null</td>
+  <td>0.9848</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_not_be_null</td>
+  <td class="col-name">City</td>
+  <td>At least 97% of 'City' values should be non-null</td>
+  <td>0.9873</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_not_be_null</td>
+  <td class="col-name">Country</td>
+  <td>At least 97% of 'Country' values should be non-null</td>
+  <td>0.987</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_not_be_null</td>
+  <td class="col-name">TransactionDate</td>
+  <td>At least 97% of 'TransactionDate' values should be non-null</td>
+  <td>0.9886</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_be_between</td>
+  <td class="col-name">Age</td>
+  <td>At least 97% of 'Age' values should be between 0 and 120</td>
+  <td>0.9706</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge fail">FAIL</span></td>
+  <td>expect_column_values_to_be_between</td>
+  <td class="col-name">Salary</td>
+  <td>At least 97% of 'Salary' values should be between 0 and None</td>
+  <td>0.9653</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_be_between</td>
+  <td class="col-name">PurchaseAmount</td>
+  <td>At least 97% of 'PurchaseAmount' values should be between 0 and None</td>
+  <td>0.9701</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_match_regex</td>
+  <td class="col-name">CustomerID</td>
+  <td>At least 99% of 'CustomerID' values should match pattern ^CUST\d+$</td>
+  <td>1.0</td>
+  <td>0.99</td>
+</tr>
+<tr>
+  <td><span class="badge fail">FAIL</span></td>
+  <td>expect_column_values_to_be_valid_dates</td>
+  <td class="col-name">TransactionDate</td>
+  <td>At least 97% of 'TransactionDate' values should be valid, non-future dates</td>
+  <td>0.9614</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_be_in_set</td>
+  <td class="col-name">City</td>
+  <td>At least 97% of 'City' values should be a recognized category</td>
+  <td>0.9873</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_column_values_to_be_in_set</td>
+  <td class="col-name">Country</td>
+  <td>At least 97% of 'Country' values should be a recognized category</td>
+  <td>0.987</td>
+  <td>0.97</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_compound_row_uniqueness</td>
+  <td class="col-name">CustomerID, Age, Salary, PurchaseAmount, City, Country, TransactionDate</td>
+  <td>At least 95% of rows should be unique across ['CustomerID', 'Age', 'Salary', 'PurchaseAmount', 'City', 'Country', 'TransactionDate']</td>
+  <td>0.9709</td>
+  <td>0.95</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_table_row_count_to_be_between</td>
+  <td class="col-name">-</td>
+  <td>Row count should be between 1 and None</td>
+  <td>103000</td>
+  <td>[1, None]</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_distribution_to_match_reference</td>
+  <td class="col-name">Salary</td>
+  <td>'Salary' distribution should match the reference distribution (KS statistic <= 0.15)</td>
+  <td>0.0</td>
+  <td>0.15</td>
+</tr>
+<tr>
+  <td><span class="badge pass">PASS</span></td>
+  <td>expect_distribution_to_match_reference</td>
+  <td class="col-name">PurchaseAmount</td>
+  <td>'PurchaseAmount' distribution should match the reference distribution (KS statistic <= 0.15)</td>
+  <td>0.0</td>
+  <td>0.15</td>
+</tr>
+    </tbody>
+  </table>
+</div>
+<footer>Generated by the AI-Based Data Quality Monitoring System &mdash; Great-Expectations-style validation engine</footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+  "trained_at": "2026-07-03T08:17:28.839076+00:00",
+  "dataset_path": "/home/claude/AI-Data-Quality-Monitoring/data/raw/synthetic_data.csv",
+  "train_rows": 82400,
+  "test_rows": 20600,
+  "feature_columns": [
+    "missing_ratio",
+    "age_missing",
+    "salary_missing",
+    "purchase_missing",
+    "city_missing",
+    "country_missing",
+    "date_missing",
+    "is_duplicate",
+    "age_zscore",
+    "salary_zscore",
+    "purchase_zscore",
+    "age_iqr_outlier",
+    "salary_iqr_outlier",
+    "purchase_iqr_outlier",
+    "outlier_score",
+    "is_valid_date",
+    "is_future_date",
+    "days_since_transaction",
+    "rolling_avg_purchase_7",
+    "schema_violation_count",
+    "city_valid",
+    "country_valid",
+    "negative_salary_flag",
+    "negative_purchase_flag"
+  ],
+  "winning_classifier": "RandomForest",
+  "label_map": {
+    "Good Data": 0,
+    "Bad Data": 1
+  },
+  "results": {
+    "RandomForest": {
+      "model_name": "RandomForest",
+      "accuracy": 0.9251456310679612,
+      "precision": 0.9507181075753309,
+      "recall": 0.7117857895846511,
+      "f1_score": 0.814082469254883,
+      "roc_auc": 0.855742561892008,
+      "confusion_matrix": [
+        [
+          15682,
+          175
+        ],
+        [
+          1367,
+          3376
+        ]
+      ],
+      "best_params": {
+        "max_depth": 10,
+        "n_estimators": 150
+      },
+      "cv_f1_mean": 0.8100807151538666,
+      "cv_f1_std": 0.00397570210362545,
+      "hyperparameter_search_sample_size": 25000
+    },
+    "XGBoost": {
+      "model_name": "XGBoost",
+      "accuracy": 0.9250970873786408,
+      "precision": 0.9504504504504504,
+      "recall": 0.7117857895846511,
+      "f1_score": 0.8139843279083785,
+      "roc_auc": 0.8577188947215102,
+      "confusion_matrix": [
+        [
+          15681,
+          176
+        ],
+        [
+          1367,
+          3376
+        ]
+      ],
+      "best_params": {
+        "max_depth": 4,
+        "n_estimators": 100
+      },
+      "cv_f1_mean": 0.8135809195329152,
+      "cv_f1_std": 0.005436425021039968
+    },
+    "IsolationForest": {
+      "model_name": "IsolationForest",
+      "contamination": 0.23024271844660193,
+      "accuracy": 0.8821359223300971,
+      "precision": 0.7540048277375466,
+      "recall": 0.7244360109635252,
+      "f1_score": 0.7389247311827957,
+      "roc_auc": 0.8510748360275784,
+      "confusion_matrix": [
+        [
+          14736,
+          1121
+        ],
+        [
+          1307,
+          3436
+        ]
+      ],
+      "note": "Unsupervised model; benchmarked against ground-truth labels for reference only (it never sees y_train). Expected to underperform the supervised classifiers."
+    }
+  }
+}

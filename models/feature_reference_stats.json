@@ -1,0 +1,100 @@
+{
+  "numeric": {
+    "Age": {
+      "mean": 41.755659524958844,
+      "std": 18.835424434259572,
+      "q1": 32.0,
+      "q3": 50.0,
+      "iqr": 18.0,
+      "lower_bound": 5.0,
+      "upper_bound": 77.0,
+      "median": 41.0
+    },
+    "Salary": {
+      "mean": 74345.32968605304,
+      "std": 146720.05353106893,
+      "q1": 37339.6575,
+      "q3": 76150.545,
+      "iqr": 38810.8875,
+      "lower_bound": -20876.673749999994,
+      "upper_bound": 134366.87625,
+      "median": 52918.51
+    },
+    "PurchaseAmount": {
+      "mean": 138.17931356100922,
+      "std": 379.78725430326915,
+      "q1": 48.565,
+      "q3": 141.48,
+      "iqr": 92.91499999999999,
+      "lower_bound": -90.8075,
+      "upper_bound": 280.85249999999996,
+      "median": 87.07
+    }
+  },
+  "categorical": {
+    "City": {
+      "known_values": [
+        "-",
+        "12345",
+        "???",
+        "Bangalore",
+        "Berlin",
+        "Cairo",
+        "Chicago",
+        "Delhi",
+        "Dubai",
+        "Houston",
+        "London",
+        "Los Angeles",
+        "Madrid",
+        "Manchester",
+        "Melbourne",
+        "Mexico City",
+        "Mumbai",
+        "New York",
+        "Osaka",
+        "Paris",
+        "Phoenix",
+        "Pune",
+        "Rome",
+        "Sao Paulo",
+        "Singapore",
+        "Sydney",
+        "TEST_CITY",
+        "Tokyo",
+        "Toronto",
+        "Vancouver",
+        "unknown",
+        "xxCityxx"
+      ],
+      "min_category_count": 82
+    },
+    "Country": {
+      "known_values": [
+        "0000",
+        "???",
+        "Atlantis",
+        "Australia",
+        "Brazil",
+        "Canada",
+        "Egypt",
+        "France",
+        "Germany",
+        "India",
+        "Italy",
+        "Japan",
+        "Mexico",
+        "Singapore",
+        "Spain",
+        "UAE",
+        "UK",
+        "USA",
+        "Unknown",
+        "Wakanda"
+      ],
+      "min_category_count": 82
+    }
+  },
+  "fitted_on_rows": 82400,
+  "fitted_at": "2026-07-03T08:16:04.399079+00:00"
+}

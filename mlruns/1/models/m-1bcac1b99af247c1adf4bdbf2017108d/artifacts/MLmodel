@@ -1,0 +1,22 @@
+artifact_path: /home/claude/AI-Data-Quality-Monitoring/mlruns/1/models/m-1bcac1b99af247c1adf4bdbf2017108d/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.3
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.3.0
+mlflow_version: 3.14.0
+model_id: m-1bcac1b99af247c1adf4bdbf2017108d
+model_size_bytes: 163508
+model_uuid: m-1bcac1b99af247c1adf4bdbf2017108d
+prompts: null
+run_id: ef82d2174bc74bc9a478618fe101df11
+utc_time_created: '2026-07-03 08:17:15.067150'

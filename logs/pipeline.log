@@ -1,0 +1,12 @@
+2026-07-04 12:35:20 | WARNING  | alerts | [high_outlier_rate] 13.05% of rows in 'synthetic_data.csv (full dataset)' are statistical outliers (threshold: 3.0%).
+2026-07-04 12:35:20 | INFO     | alerts | (mock) email queued to data-quality-team@example.com: [Data Quality Alert - WARNING] High Outlier Rate
+2026-07-04 12:35:20 | INFO     | alerts | (mock) Slack message posted to #data-quality-alerts: high_outlier_rate
+2026-07-04 12:35:20 | INFO     | monitoring | Monitoring run #2 on 'synthetic_data.csv (full dataset)': quality_score=83.39, missing=8.85%, duplicate=2.91%, outlier=13.05%, drift=False, alerts_fired=1
+2026-07-04 12:36:14 | INFO     | api | Validated '/Users/mohitbarse/Desktop/AI-Data-Quality-Monitoring/data/raw/synthetic_data.csv': 15/17 passed
+2026-07-04 12:36:14 | INFO     | api | Validated '/Users/mohitbarse/Desktop/AI-Data-Quality-Monitoring/data/raw/synthetic_data.csv': 15/17 passed
+2026-07-04 12:36:14 | INFO     | api | Validated '/Users/mohitbarse/Desktop/AI-Data-Quality-Monitoring/data/raw/synthetic_data.csv': 15/17 passed
+2026-07-04 12:36:14 | INFO     | api | Uploaded dataset 'test_upload.csv' -> id=e8ae0750d968 (2 rows)
+2026-07-04 12:36:31 | WARNING  | alerts | [high_outlier_rate] 13.05% of rows in 'synthetic_data.csv (full dataset)' are statistical outliers (threshold: 3.0%).
+2026-07-04 12:36:31 | INFO     | alerts | (mock) email queued to data-quality-team@example.com: [Data Quality Alert - WARNING] High Outlier Rate
+2026-07-04 12:36:31 | INFO     | alerts | (mock) Slack message posted to #data-quality-alerts: high_outlier_rate
+2026-07-04 12:36:31 | INFO     | monitoring | Monitoring run #3 on 'synthetic_data.csv (full dataset)': quality_score=83.39, missing=8.85%, duplicate=2.91%, outlier=13.05%, drift=False, alerts_fired=1

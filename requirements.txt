@@ -1,0 +1,44 @@
+# AI-Based Data Quality Monitoring System -- dependencies
+# Tested on Python 3.11 / 3.12. Install with:
+#   pip install -r requirements.txt
+
+# ---- Core data / ML ----
+pandas==2.3.3
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.3.0
+joblib==1.5.3
+
+# ---- Visualization ----
+matplotlib==3.10.8
+seaborn==0.13.2
+plotly==6.8.0
+
+# ---- API ----
+fastapi==0.139.0
+uvicorn[standard]==0.49.0
+pydantic==2.13.4
+python-multipart==0.0.32
+httpx==0.28.1
+
+# ---- Dashboard ----
+streamlit==1.58.0
+
+# ---- Experiment tracking (local SQLite backend, no server required) ----
+mlflow==3.14.0
+SQLAlchemy==2.0.51
+
+# ---- Testing ----
+pytest==9.1.1
+
+# ------------------------------------------------------------------------
+# Optional / not required to run `python run.py`, the API, or the dashboard:
+#
+#   apache-airflow>=3.0     needed only to actually schedule airflow/dags.py
+#                            (heavy install; see README > Airflow section)
+#   great_expectations       needed only if you swap the built-in
+#                            Great-Expectations-style validator for the real
+#                            library (see validation/great_expectations.py
+#                            module docstring for the integration snippet)
+# ------------------------------------------------------------------------

@@ -1,0 +1,23 @@
+artifact_path: /home/claude/AI-Data-Quality-Monitoring/mlruns/1/models/m-e663cdca115248e5a4d40d4d44757d34/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-e663cdca115248e5a4d40d4d44757d34
+model_size_bytes: 6813631
+model_uuid: m-e663cdca115248e5a4d40d4d44757d34
+prompts: null
+run_id: 5bc4c68ea8ce426d8b0fd249c2484058
+utc_time_created: '2026-07-03 08:16:51.592341'

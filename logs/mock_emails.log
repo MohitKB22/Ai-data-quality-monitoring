@@ -1,0 +1,40 @@
+To: data-quality-team@example.com
+Subject: [Data Quality Alert - WARNING] High Outlier Rate
+Sent: 2026-07-04T07:01:14.581521+00:00
+
+30.97% of rows in 'synthetic_data.csv (current period)' are statistical outliers (threshold: 3.0%).
+
+Observed value: 30.97
+Threshold: 3.0
+-- AI-Based Data Quality Monitoring System
+----------------------------------------------------------------------
+To: data-quality-team@example.com
+Subject: [Data Quality Alert - CRITICAL] Data Drift Detected
+Sent: 2026-07-04T07:01:14.581562+00:00
+
+Statistically significant distribution drift detected in column(s) ['Salary'] for 'synthetic_data.csv (current period)' (KS statistic > 0.15).
+
+Observed value: None
+Threshold: 0.15
+-- AI-Based Data Quality Monitoring System
+----------------------------------------------------------------------
+To: data-quality-team@example.com
+Subject: [Data Quality Alert - WARNING] High Outlier Rate
+Sent: 2026-07-04T07:05:20.929292+00:00
+
+13.05% of rows in 'synthetic_data.csv (full dataset)' are statistical outliers (threshold: 3.0%).
+
+Observed value: 13.05
+Threshold: 3.0
+-- AI-Based Data Quality Monitoring System
+----------------------------------------------------------------------
+To: data-quality-team@example.com
+Subject: [Data Quality Alert - WARNING] High Outlier Rate
+Sent: 2026-07-04T07:06:31.476243+00:00
+
+13.05% of rows in 'synthetic_data.csv (full dataset)' are statistical outliers (threshold: 3.0%).
+
+Observed value: 13.05
+Threshold: 3.0
+-- AI-Based Data Quality Monitoring System
+----------------------------------------------------------------------
